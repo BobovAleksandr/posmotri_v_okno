@@ -63,29 +63,34 @@ fieldset {
 }
 
 .result {
-  flex: 1 0 710px;
+  flex: 0 0 710px;
 }
 
 .result__video-container {
   position: relative;
   margin-bottom: 10px;
-  object-fit: cover;
-  object-position: top left;
 }
 
 .result__video {
   width: 100%;
+  max-height: 386px;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .search-form {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  gap: 30px;
+  gap: 25px;
 }
 
 .search-form__fieldset {
   width: 225px;
+}
+
+.search-form__fieldset:nth-child(2) {
+  margin-left: 15px;
 }
 
 .search-form__fieldset-title {
@@ -101,16 +106,9 @@ fieldset {
   max-height: 300px;
   padding: 3px;
   overflow: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.content__list::-webkit-scrollbar {
-  display: none;
 }
 
 .content__list-item {
-  padding-left: 2px;
   cursor: pointer;
 }
 
@@ -132,6 +130,10 @@ fieldset {
   background-color: #545050;
 }
 
+.content__card-link:focus {
+  outline: none;
+}
+
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
@@ -147,11 +149,14 @@ fieldset {
 }
 
 .content__video-card-description-container {
-  flex: 1 0 200px;
-  /* max-width: 200px; */
+  flex: 0 0 185px;
 }
 
 .content__video-card-title {
+  max-width: 185px;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   font-size: 30px;
@@ -167,11 +172,10 @@ fieldset {
 
 .content__video-card-thumbnail {
   display: block;
-  flex: 1 0 194px;
-  flex-shrink: 0;
-  max-height: 102px;
+  flex: 0 0 194px;
+  max-height: 103px;
   object-fit: cover;
-  object-position: top left;
+  object-position: center center;
 }
 
 .content__details {
@@ -206,6 +210,10 @@ fieldset {
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
 
 .search-form__textfield {
@@ -251,26 +259,13 @@ fieldset {
   background-color: #fff;
 }
 
-.search-form__label:hover .search-form__label-text {
-  text-decoration: underline;
-}
-
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-}
-
-.search-form__checkbox:focus-visible {
-  outline: none;
-}
-
 .search-form__submit-button {
   align-self: end;
   width: 194px;
 }
 
 .button {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   padding: 4px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
