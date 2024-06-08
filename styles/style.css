@@ -9,7 +9,10 @@ html {
 }
 
 .page {
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -57,7 +60,6 @@ fieldset {
   align-items: end;
   gap: 30px;
   max-width: 1200px;
-  padding: 133px 30px;
 }
 
 .result {
