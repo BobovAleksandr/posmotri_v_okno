@@ -97,8 +97,8 @@ fieldset {
 .content__list {
   position: relative;
   max-height: 300px;
-  overflow: auto;
   padding: 3px;
+  overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -165,8 +165,8 @@ fieldset {
 
 .content__video-card-thumbnail {
   display: block;
-  flex-shrink: 0;
   flex: 1 0 194px;
+  flex-shrink: 0;
   max-height: 102px;
   object-fit: cover;
   object-position: top left;
@@ -242,12 +242,10 @@ fieldset {
 
 .search-form__checkbox:checked+span::after {
   content: '';
-  position: absolute;
-  top: 1px;
-  left: 1px;
   display: block;
   width: 15px;
   height: 15px;
+  margin: 1px;
   background-color: #fff;
 }
 
