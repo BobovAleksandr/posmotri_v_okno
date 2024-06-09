@@ -60,7 +60,7 @@ fieldset {
   align-items: end;
   gap: 30px;
   max-width: 1200px;
-  max-height: 534px;
+  min-height: 534px;
 }
 
 .result {
@@ -97,6 +97,7 @@ fieldset {
 .search-form__fieldset-title {
   margin-bottom: 5px;
   font-size: inherit;
+  font-weight: 400;
 }
 
 .content__list {
@@ -175,7 +176,6 @@ fieldset {
 
 .content__details {
   flex: 0 0 400px;
-  height: 534px;
   margin-bottom: auto;
 }
 
