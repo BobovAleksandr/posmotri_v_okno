@@ -60,7 +60,6 @@ fieldset {
   align-items: end;
   gap: 30px;
   max-width: 1200px;
-  min-height: 534px;
 }
 
 .result {
@@ -102,7 +101,7 @@ fieldset {
 
 .content__list {
   position: relative;
-  max-height: 300px;
+  height: 300px;
   padding: 3px;
   overflow: auto;
 }
